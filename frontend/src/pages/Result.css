@@ -1,0 +1,122 @@
+.result-container {
+  min-height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at top, #121936, #05060d 70%);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.main-title {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #7d8cff;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 360px;
+  padding: 30px;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #1a1f3a, #0f1224);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.buy-title {
+  color: #7d8cff;
+}
+
+.dont-title {
+  color: #aaa;
+}
+
+.avatar {
+  margin: 25px auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #444;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.glow {
+  box-shadow: 0 0 30px #7d8cff;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 15px 20px;
+  border-radius: 15px;
+  background: #202437;
+  font-size: 14px;
+}
+
+.stat span {
+  flex: 1;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.stat strong {
+  margin-right: 10px;
+}
+
+.green {
+  color: #00ffae;
+}
+
+.red {
+  color: #ff4e4e;
+}
+
+.neutral {
+  color: #ccc;
+}
+
+.impact-btn {
+  width: 420px;
+  max-width: 90%;
+  padding: 18px;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #5b4bff, #7d8cff);
+  box-shadow: 0 10px 30px rgba(90, 80, 255, 0.4);
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.impact-btn:hover {
+  transform: translateY(-3px);
+}
+
+.try-again {
+  color: #aaa;
+  cursor: pointer;
+  margin-top: 10px;
+}

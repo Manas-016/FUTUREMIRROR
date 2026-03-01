@@ -1,0 +1,182 @@
+.input-page {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 80px 60px;
+  background: radial-gradient(circle at center, #11132a 0%, #05060f 60%, #000 100%);
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------------- HOME ICON ---------------- */
+
+.home-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.home-icon svg {
+  color: white;
+  transition: 0.3s;
+}
+
+.home-icon svg:hover {
+  transform: scale(1.2);
+}
+
+/* ---------------- TEXT SECTION ---------------- */
+
+.text-section {
+  max-width: 700px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.text-section h1 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.text-section span {
+  background: linear-gradient(90deg, #6b5bff, #8b7cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---------------- OPTIONS CONTAINER ---------------- */
+
+.options {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ---------------- CARD STYLE ---------------- */
+
+.option-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  padding: 25px 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-card:hover {
+  transform: translateY(-4px);
+  border: 1px solid rgba(107, 91, 255, 0.5);
+  box-shadow: 0 0 25px rgba(107, 91, 255, 0.3);
+}
+
+.option-card span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ---------------- ICONS ---------------- */
+
+.icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.purple {
+  background: rgba(107, 91, 255, 0.2);
+  color: #8b7cff;
+}
+
+.violet {
+  background: rgba(155, 89, 182, 0.2);
+  color: #c084fc;
+}
+
+.green {
+  background: rgba(40, 167, 69, 0.2);
+  color: #2ecc71;
+}
+
+/* ---------------- INPUTS ---------------- */
+
+.option-card input {
+  flex: 1;
+  min-width: 120px;
+
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.option-card input::placeholder {
+  color: #9aa0c3;
+}
+
+.option-card input:focus {
+  border: 1px solid #6b5bff;
+  box-shadow: 0 0 10px rgba(107, 91, 255, 0.4);
+}
+
+/* Keep price field smaller */
+.option-card input[type="number"] {
+  max-width: 150px;
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+.option-card button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #6b5bff;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.option-card button:hover {
+  background: #8b7cff;
+  box-shadow: 0 0 15px rgba(107, 91, 255, 0.4);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+  .input-page {
+    padding: 60px 25px;
+  }
+
+  .option-card {
+    padding: 20px;
+  }
+
+  .option-card input {
+    width: 100%;
+  }
+}

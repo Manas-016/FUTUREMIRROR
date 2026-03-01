@@ -1,0 +1,130 @@
+.sim-container {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at top, #121936 0%, #05060d 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin-bottom: 50px;
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(130, 145, 255, 0.35);
+  animation: pulse 3.5s infinite ease-in-out;
+}
+
+.ring-outer {
+  width: 260px;
+  height: 260px;
+}
+
+.ring-middle {
+  width: 210px;
+  height: 210px;
+  top: 25px;
+  left: 25px;
+  animation-delay: 0.6s;
+}
+
+.center-circle {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 50px;
+  left: 50px;
+  border-radius: 50%;
+  background: rgba(28, 35, 80, 0.55);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 60px rgba(120, 140, 255, 0.25);
+}
+
+.logo {
+  font-size: 48px;
+  color: #8b95ff;
+  animation: float 4s ease-in-out infinite;
+}
+
+.sim-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  letter-spacing: 0.5px;
+}
+
+.dots {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.dots span {
+  width: 12px;
+  height: 12px;
+  background: #8b95ff;
+  border-radius: 50%;
+  animation: bounce 1.6s infinite ease-in-out;
+}
+
+.dots span:nth-child(1) { animation-delay: 0s; }
+.dots span:nth-child(2) { animation-delay: 0.25s; }
+.dots span:nth-child(3) { animation-delay: 0.5s; }
+
+.sim-subtitle {
+  color: #666;
+  font-size: 14px;
+  letter-spacing: 3px;
+  opacity: 0.7;
+  animation: blink 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.25;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0.7);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%,100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}

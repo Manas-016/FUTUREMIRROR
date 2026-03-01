@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+.dashboard {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 40px;
+  background: radial-gradient(circle at center, #11132a 0%, #05060f 60%, #000 100%);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome {
+  color: #b5b9d6;
+  font-size: 18px;
+}
+
+.username {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.profile-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid rgba(130, 120, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #cfd2ff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.scan-section {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.scan-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid rgba(107, 91, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 15, 60, 0.4);
+  box-shadow: 0 0 60px rgba(107, 91, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.scan-circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 80px rgba(107, 91, 255, 0.6);
+}
+
+.scan-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #8b7cff;
+}
+
+.scan-circle p {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.recent-section {
+  margin-top: 40px;
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.recent-header span {
+  font-size: 14px;
+  color: #8b7cff;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 260px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border: 1px solid rgba(107, 91, 255, 0.5);
+}
+
+.card h4 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.card p {
+  margin-top: 5px;
+  color: #b5b9d6;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.yellow {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+}
+
+.blue {
+  background: rgba(0, 123, 255, 0.2);
+  color: #4dabf7;
+}
+
+.green {
+  background: rgba(40, 167, 69, 0.2);
+  color: #2ecc71;
+}
