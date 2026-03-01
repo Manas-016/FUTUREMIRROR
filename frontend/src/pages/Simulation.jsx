@@ -11,7 +11,7 @@ function Simulation() {
       <div className="top-section">
         <div className="circle left-circle">
           <img
-            src="https://images.unsplash.com/photo-1608889175111-8d6a5d1c6c88?q=80&w=500"
+            src="left_circle_image.png"
             alt="future"
           />
         </div>

@@ -43,6 +43,8 @@ body {
 .left-circle {
   background: #1a1c35;
   overflow: hidden;
+  height: 220px;
+  width: 220px;
 }
 
 .left-circle img {
